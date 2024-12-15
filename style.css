@@ -1,0 +1,51 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #bbada0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background: rgba(238, 228, 218, 0.35);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.cell[data-value="2"] { background: #eee4da; }
+.cell[data-value="4"] { background: #ede0c8; }
+.cell[data-value="8"] { background: #f2b179; color: #f9f6f2; }
+.cell[data-value="16"] { background: #f59563; color: #f9f6f2; }
+.cell[data-value="32"] { background: #f67c5f; color: #f9f6f2; }
+.cell[data-value="64"] { background: #f65e3b; color: #f9f6f2; }
+.cell[data-value="128"] { background: #edcf72; color: #f9f6f2; }
+.cell[data-value="256"] { background: #edcc61; color: #f9f6f2; }
+.cell[data-value="512"] { background: #edc850; color: #f9f6f2; }
+.cell[data-value="1024"] { background: #edc53f; color: #f9f6f2; }
+.cell[data-value="2048"] { background: #edc22e; color: #f9f6f2; }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+} 
